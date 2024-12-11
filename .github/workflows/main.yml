@@ -14,7 +14,8 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with: 
-          token: ${{ secrets.METRICS_TOKEN }}
+          env: 
+            production: ${{ secrets.METRICS_TOKEN }}
 
           # Options
           template: classic
